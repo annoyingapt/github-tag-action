@@ -5,6 +5,6 @@ LABEL "original maintainer"="Nick Sjostrom"
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN apt update && apt add bash git curl jq && apt add --update nodejs npm && npm install -g semver
+RUN apt update && apt add bash git curl jq && wget -O node-v15.9.0-linux-x64.tar.xz https://nodejs.org/dist/v15.9.0/node-v15.9.0-linux-x64.tar.xz && sudo mkdir -p /usr/local/lib/nodejs && sudo tar -xJvf node-v15.9.0-linux-x64.tar.xz -C /usr/local/lib/nodejs && export PATH=/usr/local/lib/nodejs/node-v15.9.0-linux-x64/bin:$PATH && . ~/.profile
 
 ENTRYPOINT ["/entrypoint.sh"]
