@@ -2,9 +2,7 @@
 
 A Github Action to automatically bump and tag master, on merge, with the latest SemVer formatted version.
 
-[![Build Status](https://github.com/anothrNick/github-tag-action/workflows/Bump%20version/badge.svg)](https://github.com/anothrNick/github-tag-action/workflows/Bump%20version/badge.svg)
-[![Stable Version](https://img.shields.io/github/v/tag/anothrNick/github-tag-action)](https://img.shields.io/github/v/tag/anothrNick/github-tag-action)
-[![Latest Release](https://img.shields.io/github/v/release/anothrNick/github-tag-action?color=%233D9970)](https://img.shields.io/github/v/release/anothrNick/github-tag-action?color=%233D9970)
+[![Build Status](https://img.shields.io/appveyor/build/annoyingapt/github-tag-action?style=plastic)](https://img.shields.io/appveyor/build/annoyingapt/github-tag-action?style=plastic)
 
 > Medium Post: [Creating A Github Action to Tag Commits](https://itnext.io/creating-a-github-action-to-tag-commits-2722f1560dec)
 
@@ -20,7 +18,7 @@ on:
       - master
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     steps:
     - uses: actions/checkout@v2
       with:
