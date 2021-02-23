@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:20.04
 LABEL "repository"="https://github.com/annoyingapt/github-tag-action"
 LABEL "homepage"="https://github.com/annoyingapt/github-tag-action"
 LABEL "original maintainer"="Nick Sjostrom"
