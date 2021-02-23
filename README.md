@@ -1,6 +1,6 @@
 # github-tag-action
 
-A Github Action to automatically bump and tag master, on merge, with the latest SemVer formatted version.
+A Github Action to automatically bump and tag master, on merge, with the latest SemVer formatted version. Switched back from Alpine -> Ubuntu for reasons.
 
 [![Build Status](https://img.shields.io/appveyor/build/annoyingapt/github-tag-action?style=plastic)](https://img.shields.io/appveyor/build/annoyingapt/github-tag-action?style=plastic)
 
